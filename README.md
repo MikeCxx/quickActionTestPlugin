@@ -1,7 +1,10 @@
-<h1 align="center">test</h1>
-  <p align="center">
-    <a href="https://conventionalcommits.org/" target="_blank">
-      <img alt="Conventional Commits" src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg">
-    </a>
-  </p>
-  
+# 安装依赖
+npm install 
+# 新增插槽
+npx op add module
+
+# 新增能力
+npx op add ability
+
+# 打包
+npx op packup
