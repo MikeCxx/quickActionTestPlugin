@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "private": true,
+  "devDependencies": {
+    "@ones/cli-ability-template": "^1.0.2-16560.13",
+    "@ones/cli-plugin": "^1.2.2-16560.4",
+    "@ones/cli-plugin-template": "^1.1.1-16560.13"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "op init",
+    "packup": "op packup"
+  },
+  "license": "ISC"
+}

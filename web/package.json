@@ -1,0 +1,37 @@
+{
+  "name": "node-plugin-template",
+  "version": "1.0.0",
+  "description": "node.js 插件模版。",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "lint": "tsc --noEmit && eslint \"src/**/*.{js,ts}\" --quiet --fix"
+  },
+  "dependencies": {
+    "@ones-op/event": "0.6.3",
+    "@ones-op/store": "0.3.2-22469.6+b1f4e04"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.18.2",
+    "@babel/plugin-transform-runtime": "~7.18.2",
+    "@babel/preset-env": "~7.18.2",
+    "@babel/preset-react": "~7.17.12",
+    "@babel/preset-typescript": "~7.17.12",
+    "@babel/runtime-corejs3": "~7.18.3",
+    "@ones-design/icons": "^2.16.1",
+    "@ones-design/core": "^2.10.4",
+    "@svgr/webpack": "~6.2.1",
+    "@types/react": "~17.0.2",
+    "@types/react-dom": "~17.0.2",
+    "babel-loader": "~8.2.3",
+    "css-loader": "~6.7.1",
+    "postcss": "~8.4.14",
+    "postcss-loader": "~7.0.0",
+    "prettier": "~2.6.2",
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2",
+    "typescript": "~4.7.3",
+    "cross-env": "7.0.3",
+    "rimraf": "3.0.2"
+  }
+}

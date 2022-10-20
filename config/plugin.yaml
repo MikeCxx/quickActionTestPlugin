@@ -1,0 +1,33 @@
+service:
+  app_id: bi357gGm
+  name: test
+  version: 1.0.0
+  description: ''
+  mode: org
+  logo: null
+  language: nodejs
+  language_version: 16.13.0
+  host_version: 1.0.4
+  host_sub_version: 1.0.0
+  min_system_version: 3.5.0
+  auth: null
+  config: null
+  scope: 1
+apis:
+  - type: addition
+    methods:
+      - POST
+    url: /hello
+    function: hello
+modules:
+  - id: ones-global-modal-9Pro
+    title: 测试
+    moduleType: ones:global:modal
+    entry: modules/ones-global-modal-9Pro/index.html
+abilities:
+  - id: UhPH9vEC
+    name: 自定义视图快捷操作
+    version: 1.0.0
+    abilityType: LayoutCustomQuickAction
+    relateModule:
+      quickActionMenu: 'ones-global-modal-9Pro'

@@ -1,0 +1,31 @@
+{
+  "name": "node-plugin-template",
+  "version": "1.0.0",
+  "description": "node.js 插件模版。",
+  "main": "dist/index.js",
+  "private": true,
+  "scripts": {
+    "lint": "tsc --noEmit && eslint \"src/**/*.{js,ts}\" --quiet --fix"
+  },
+  "dependencies": {
+    "@ones-op/node-ability": "~0.3.0",
+    "@ones-op/node-common-db": "~0.6.0",
+    "@ones-op/node-database": "~0.5.0",
+    "@ones-op/node-fetch": "~0.5.0",
+    "@ones-op/node-file": "~0.5.0",
+    "@ones-op/node-logger": "~0.5.0",
+    "@ones-op/node-protocol-utils": "~0.5.0",
+    "@ones-op/node-system-db": "~0.5.0",
+    "@ones-op/node-types": "~0.3.0",
+    "@ones-op/node-utils": "~0.5.0"
+  },
+  "devDependencies": {
+    "@ones-op/node-host": "~0.2.0",
+    "@typescript-eslint/eslint-plugin": "5.15.0",
+    "@typescript-eslint/parser": "5.15.0",
+    "cross-env": "7.0.3",
+    "eslint": "8.11.0",
+    "rimraf": "3.0.2",
+    "typescript": "4.6.2"
+  }
+}
