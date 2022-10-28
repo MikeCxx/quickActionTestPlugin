@@ -24,6 +24,8 @@ modules:
     title: 测试
     moduleType: ones:global:modal
     entry: modules/ones-global-modal-9Pro/index.html
+    manual: true
+    preload: true
 abilities:
   - id: UhPH9vEC
     name: 自定义视图快捷操作
