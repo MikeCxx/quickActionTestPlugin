@@ -26,7 +26,6 @@ modules:
     entry: modules/ones-global-modal-9Pro/index.html
     manual: true
     preload: true
-    icon: logo.svg
 abilities:
   - id: UhPH9vEC
     name: 自定义视图快捷操作

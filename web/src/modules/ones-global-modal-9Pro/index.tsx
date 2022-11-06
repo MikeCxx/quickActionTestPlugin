@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom'
 import { ConfigProvider } from '@ones-design/core'
 import './index.css'
 import { useTaskInfo } from '@ones-op/store'
-import { OPDispatch } from  '@ones-op/event'
+import { OPDispatch, DestoryCurrentModule } from  '@ones-op/event'
 function App() {
-  const { uuid } = useTaskInfo()
+  // const { uuid } = useTaskInfo()
   useEffect(() => {
-    console.log('uuid', uuid)
-    alert('调用成功')
-    OPDispatch('ones:event:global:manual:module:destroy')
+    alert('调用成功1')
+    DestoryCurrentModule()
   }, [])
   return <></>
 }
