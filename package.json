@@ -2,9 +2,9 @@
   "name": "test",
   "private": true,
   "devDependencies": {
-    "@ones/cli-ability-template": "^1.0.2-16560.13",
-    "@ones/cli-plugin": "^1.2.2-16560.4",
-    "@ones/cli-plugin-template": "^1.1.1-16560.13"
+    "@ones/cli-ability-template": "1.0.2-5398.21",
+    "@ones/cli-plugin": "1.2.2-5398.12",
+    "@ones/cli-plugin-template": "1.1.1-5398.21"
   },
   "version": "1.0.0",
   "description": "",

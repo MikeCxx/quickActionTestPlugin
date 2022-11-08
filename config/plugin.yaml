@@ -1,6 +1,6 @@
 service:
-  app_id: bi357gGm
-  name: test
+  app_id: bi357gG1
+  name: testmodal
   version: 1.0.0
   description: ''
   mode: org
@@ -26,10 +26,16 @@ modules:
     entry: modules/ones-global-modal-9Pro/index.html
     manual: true
     preload: true
+  - id: ones-global-modal-5C8-
+    title: www
+    moduleType: ones:global:modal
+    entry: modules/ones-global-modal-5C8-/index.html
+    manual: true
+    preload: true
 abilities:
   - id: UhPH9vEC
     name: 自定义视图快捷操作
     version: 1.0.0
     abilityType: LayoutCustomQuickAction
     relateModule:
-      quickActionMenu: 'ones-global-modal-9Pro'
+      quickActionMenu: ones-global-modal-9Pro
