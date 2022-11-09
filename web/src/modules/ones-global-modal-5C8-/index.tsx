@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import { ConfigProvider } from '@ones-design/core'
 import './index.css'
-import { OPPluginDispatch } from '@ones-op/event';
+import { OPDispatch } from '@ones-op/event';
 function App() {
+  useEffect(() => {
+    alert('启动成功')
+    OPDispatch('ones:event:global:manual:module:destroy')
+  }, [])
   return <>
-    <div className="wraper">哈哈哈</div>
   </>
 }
 ReactDOM.render(<ConfigProvider><App/></ConfigProvider>, document.getElementById('ones-mf-root'))
