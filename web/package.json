@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "@ones-op/event": "0.6.5-21325.27",
-    "@ones-op/store": "0.3.2-22469.6"
+    "@ones-op/fetch": "0.5.2",
+    "@ones-op/store": "0.4.0-4376.6"
   },
   "devDependencies": {
     "@babel/core": "~7.18.2",
