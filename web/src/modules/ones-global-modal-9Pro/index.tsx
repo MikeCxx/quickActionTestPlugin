@@ -2,8 +2,7 @@ import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import { ConfigProvider, Modal } from '@ones-design/core';
 import './index.css'
-import { useTaskInfo, destoryCurrentModule } from '@ones-op/store'
-import { OPDispatch } from  '@ones-op/event'
+import { useTaskInfo, destroyCurrentModule } from '@ones-op/store'
 import { OPFetch } from '@ones-op/fetch';
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
   }, [])
   const testFetch = async () => {
     try{
-      const res = await OPFetch('/hello')
+      const res = await OPFetch.post('/project/P8091/hello')
       console.log('res', res)
     } catch(e) {
       console.log('222222')
@@ -24,17 +23,17 @@ function App() {
     <Modal
       closable
       onCancel={function noRefCheck(){
-        destoryCurrentModule()
+        destroyCurrentModule()
       }}
       onMaximizeChange={function noRefCheck(){}}
       onOk={function noRefCheck(){
-        destoryCurrentModule()
+        destroyCurrentModule()
       }}
       title="Modal 对话框"
       visible
       width={520}
     >
-      <button onClick={testFetch}>3哈哈3</button>
+      <button onClick={testFetch}>3哈哈31</button>
     </Modal>
   </>
 }
