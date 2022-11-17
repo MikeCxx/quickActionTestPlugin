@@ -11,12 +11,34 @@ function App() {
   useEffect(() => {
     console.log('启用成功')
   }, [])
-  const testFetch = async () => {
+  const testStaticPost = async () => {
     try{
-      const res = await OPFetch.post('/project/P8091/hello')
-      console.log('res', res)
+      const res = await OPFetch.post('/project/P8091/hello', {}, {
+        autoErrorToast: true
+      })
+      console.log('testStaticPost', res)
     } catch(e) {
-      console.log('222222')
+      console.log('testStaticPost error')
+    }
+  }
+
+  const testExtends = async () => {
+    try{
+      const OP = OPFetch.create({})
+      const res = await OP('/project/P8091/hello')
+      console.log('testStaticPost', res)
+    } catch(e) {
+      console.log('testStaticPost error')
+    }
+  }
+
+  const testExtendsStatic = async () => {
+    try{
+      const OP = OPFetch.create({})
+      const res = await OP.get('/project/P8091/hello', {})
+      console.log('testStaticPost', res)
+    } catch(e) {
+      console.log('testStaticPost error')
     }
   }
   return <>
@@ -33,7 +55,9 @@ function App() {
       visible
       width={520}
     >
-      <button onClick={testFetch}>3哈哈31</button>
+      <button onClick={testStaticPost}>testStaticPost</button>
+      <button onClick={testExtends}>testExtends</button>
+      <button onClick={testExtendsStatic}>testExtendsStatic</button>
     </Modal>
   </>
 }

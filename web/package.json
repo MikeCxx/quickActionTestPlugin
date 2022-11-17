@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@ones-op/event": "0.6.5-21325.27",
-    "@ones-op/fetch": "0.5.2",
+    "@ones-op/fetch": "0.5.3-11136.10",
     "@ones-op/store": "0.5.0-rc.0"
   },
   "devDependencies": {
